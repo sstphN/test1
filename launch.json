@@ -1,0 +1,72 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Запустить основной бот",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/main_bot/main_bot.go",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"MAIN_BOT_TOKEN": "7115873269:AAEYW56tHX7WrWzQEhgnJXfsCMp2iZLgr_Y"
+			}
+		},
+		{
+			"name": "Запустить Бот 1",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/cmd/bot1/bot1.go",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"BOT1_TOKEN": "7000002038:AAEUakjqqEpDGLHNumcimA_GGubpvKso-Ug"
+			}
+		},
+		{
+			"name": "Запустить Бот 2",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/cmd/bot2/bot2.go",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"BOT2_TOKEN": "7820535858:AAGKYjfcpkZpAGWZdvU6V_loKJsvGOsdjSE"
+			}
+		},
+		{
+			"name": "Запустить Бот 3",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/cmd/bot3/bot3.go",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"BOT3_TOKEN": "8166976724:AAGix4tU-pm1ng5xz5xb9w5XlRN_Rbp4nGs"
+			}
+		},
+		{
+			"name": "Запустить Бот 4",
+			"type": "go",
+			"request": "launch",
+			"mode": "auto",
+			"program": "${workspaceFolder}/cmd/bot4/bot4.go",
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"BOT4_TOKEN": "7637779372:AAFdnbGQJYB-HTzv0pnvQSQQaj6la8vOwt0"
+			}
+		}
+	],
+	"compounds": [
+		{
+			"name": "Запустить всех ботов",
+			"configurations": [
+				"Запустить основной бот",
+				"Запустить Бот 1",
+				"Запустить Бот 2",
+				"Запустить Бот 3",
+				"Запустить Бот 4"
+			]
+		}
+	]
+}
